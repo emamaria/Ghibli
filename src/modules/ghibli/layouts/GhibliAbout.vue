@@ -6,7 +6,7 @@
     <a :class="isActive?'is-active':'not-active'">Director</a>
    </router-link>
     <router-link  class="link" :to="{name: 'films'}" v-slot="{isActive}">
-    <a :class="!isActive?'is-active':'not-active'">Films</a>
+    <a :class="isActive?'is-active':'not-active'">Films</a>
    </router-link>
   </nav>
  </div>

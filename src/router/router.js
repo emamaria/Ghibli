@@ -13,7 +13,7 @@ const routes = [
      children: [
         //pongo path vacío en este primer children para que sea el primer children que aparezca por defecto
         {
-         path: '',
+         path: 'director',
          name: 'director',
          component: () => import( /* webpackChunkName: "Director" */ '../modules/ghibli/pages/Director.vue')
         },
@@ -27,8 +27,11 @@ const routes = [
          name: 'film',
          component: () => import( /* webpackChunkName: "Film" */ '../modules/ghibli/pages/Film.vue')
         }
-
+      
      ]
+    },
+    { path: '/:pathMatch(.*)*',
+         component: ()=> import(/* webpackChunkName: "ghibli-about" */ '../modules/ghibli/layouts/GhibliAbout.vue') 
     }
 
 ]
