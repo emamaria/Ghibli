@@ -9,7 +9,26 @@ const routes = [
     {
      path: '/ghibli',
      name: 'ghibli-about',
-     component: () => import(/* webpackChunkName: "GhibliAbout" */ '../modules/ghibli/layouts/GhibliAbout.vue')
+     component: () => import(/* webpackChunkName: "GhibliAbout" */ '../modules/ghibli/layouts/GhibliAbout.vue'),
+     children: [
+        //pongo path vacío en este primer children para que sea el primer children que aparezca por defecto
+        {
+         path: '',
+         name: 'director',
+         component: () => import( /* webpackChunkName: "Director" */ '../modules/ghibli/pages/Director.vue')
+        },
+        {
+         path: 'films',
+         name: 'films',
+         component: () => import( /* webpackChunkName: "Films" */ '../modules/ghibli/pages/Films.vue')
+        },
+        {
+         path: 'film',
+         name: 'film',
+         component: () => import( /* webpackChunkName: "Film" */ '../modules/ghibli/pages/Film.vue')
+        }
+
+     ]
     }
 
 ]

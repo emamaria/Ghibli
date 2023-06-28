@@ -1,8 +1,8 @@
 <template>
 <div class="main_container">
-      <h1>all films</h1>
+     <h1>one film</h1>
 </div>
-
+ 
 </template>
 
 <script>
@@ -13,8 +13,8 @@ export default {
 
 <style scoped>
 .main_container{
-    background-color: blue;
-     width: 80%;
-    height: 80vh;
+    background-color: yellow;
+     /* width: 80%;
+    height: 80vh; */
 }
 </style>

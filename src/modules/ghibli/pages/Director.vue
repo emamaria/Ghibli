@@ -14,7 +14,7 @@ export default {
 <style scoped>
   .main_container{
     background-color: green;
-     width: 80%;
-    height: 80vh;
+     /* width: 80%;
+    height: 80vh; */
   }
 </style>
