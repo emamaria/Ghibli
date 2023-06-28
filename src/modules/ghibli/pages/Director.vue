@@ -1,6 +1,6 @@
 <template>
 <div class="main_container">
-     <h1>director</h1>
+     <h2>director</h2>
 </div>
  
 </template>

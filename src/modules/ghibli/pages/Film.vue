@@ -1,6 +1,6 @@
 <template>
 <div class="main_container">
-     <h1>one film</h1>
+     <h2>one film</h2>
 </div>
  
 </template>
