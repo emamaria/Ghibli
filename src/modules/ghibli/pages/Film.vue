@@ -17,6 +17,6 @@ export default {
     background-color: yellow;
      width: 90%;
     height: 40vh;
- 
+    background-image: none;
 }
 </style>

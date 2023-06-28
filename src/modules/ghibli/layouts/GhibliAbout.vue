@@ -48,13 +48,15 @@ nav{
 
 
 .main_container{
-    background-color: black;
-    width: 85%;
+    
+    width: 90%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 10px;
+    background-image: url("../../../assets/nature.jpg");
+    
 }
 
 .is-active{

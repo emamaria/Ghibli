@@ -37,8 +37,8 @@
 .titles_container{
   display: flex;
   justify-content: start;
-  padding: 3rem 0 0 3rem;
   width: 100%;
+  padding: 2rem;
 }
 
 .title_container{
@@ -46,6 +46,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 h1{
   color: white;
