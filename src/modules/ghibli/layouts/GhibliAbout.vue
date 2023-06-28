@@ -1,6 +1,9 @@
 <template>
 <div class="main_container">
+<div class="title_nav_container">
  <h1>Ghibli about</h1>  
+ </div>
+
 
  <router-view></router-view>
 </div>
@@ -17,10 +20,9 @@ export default {
 .main_container{
     background-color: red;
     width: 80%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 5rem;
 }

@@ -1,0 +1,9 @@
+html{
+    background-color: #109ceb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

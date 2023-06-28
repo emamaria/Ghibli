@@ -12,9 +12,11 @@ export default {
 </script>
 
 <style scoped>
+
 .main_container{
     background-color: yellow;
-     /* width: 80%;
-    height: 80vh; */
+     width: 90%;
+    height: 40vh;
+ 
 }
 </style>
