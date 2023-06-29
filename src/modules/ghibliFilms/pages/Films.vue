@@ -1,18 +1,22 @@
 <template>
 <div class="main_container">
    
-       <input type="text" v-model="searchFilm" placeholder="search the film">
-       <p v-for="film in computedFilms" :key="film">
-        {{film.title}}
-       </p>
+       <input type="text" v-model="searchFilm" placeholder="search the film"> 
+       <div class="film_container">
+       <Film v-for="film in computedFilms" :key="film.id" :title="film.title" :img="film.image"/>
+       </div>
 </div>
 
 </template>
 
 <script>
 import axios from 'axios'
+import { defineAsyncComponent } from 'vue'
 
 export default {
+    components:{
+      Film: defineAsyncComponent(() => import('../components/Film.vue')),
+    },
     data(){
         return {
             searchFilm: "",
@@ -44,10 +48,19 @@ export default {
 </script>
 
 <style scoped>
+
+.film_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 p{
     color: white;
 }
 input{
+    margin-bottom: 60px;
     margin-top: 5rem;
     background-color: #109ceb;
     padding: 1rem;
@@ -62,13 +75,13 @@ input:focus{
 }
 
 ::placeholder{
-    color: black;
+    color: white;
 }
 .main_container{
-
+     display: flex;
+     flex-direction: column;
     background-color:lightblue;
-     /* width: 80%;
-    height: 80vh; */
+    height: 100%;
     border-radius: 10px;
    
 }

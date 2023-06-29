@@ -21,8 +21,8 @@ export default {
 .main_container{
     
     width: 90%;
-    height: 100vh;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
