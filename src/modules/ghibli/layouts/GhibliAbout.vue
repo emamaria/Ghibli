@@ -65,7 +65,7 @@ nav{
     align-items: center;
     margin-top: 10px;
     background-image: url("../../../assets/nature.jpg");
-    
+    margin-bottom: 100px;
 }
 
 .is-active{

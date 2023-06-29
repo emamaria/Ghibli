@@ -27,7 +27,7 @@ export default {
     align-items: center;
     margin-top: 10px;
     background-color: black;
-    
+     margin-bottom: 100px;
 }
 
 .title_container{
