@@ -1,6 +1,8 @@
 <template>
 <div class="main_container">
- <h2>ghibli films</h2>
+<div class="title_container">
+ <h2>Films</h2>
+ </div>
  <router-view></router-view>
 </div>
  
@@ -28,5 +30,16 @@ export default {
     
 }
 
+.title_container{
+  display: flex;
+  justify-content: flex-start;
+   width: 100%;
+}
+
+h2{
+    color:#109ceb;
+    margin: 30px 0 0 30px;
+   font-size: 2rem;
+}
 
 </style>
