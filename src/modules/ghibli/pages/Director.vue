@@ -13,7 +13,7 @@ export default {
 
 <style scoped>
   .main_container{
-     background-image: none;
+    background-image: none;
     background-color: #118a7e;
     border-radius: 10px;
   }

@@ -1,9 +1,10 @@
 <template>
 <div class="main_container">
 <div class="title_nav_container">
+    <h2>Director</h2>
   <nav>
     <router-link class="link" :to="{name: 'director'}" v-slot="{isExactActive}">
-    <a :class="isExactActive?'is-active':'not-active'">Director</a>
+    <a :class="isExactActive?'is-active':'not-active'">About</a>
    </router-link>
     <router-link  class="link" :to="{name: 'awards'}" v-slot="{isExactActive}">
     <a :class="isExactActive?'is-active':'not-active'">awards</a>
@@ -23,10 +24,17 @@ export default {
 
 <style scoped>
 
+h2{
+    margin: 30px 0 0 30px;
+   color: #004445;
+}
+
 .title_nav_container{
     display: flex;
+    flex-direction: row;
     width: 100%;
-    justify-content: end;
+    justify-content: space-between;
+   
   
 }
 
@@ -39,7 +47,7 @@ nav{
    }
 
 .link{
-    background-color: #118a7e;
+    background-color: #2c786c;
     padding: 10px;
     margin: 3px;
     text-decoration: none;
