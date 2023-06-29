@@ -9,6 +9,7 @@ const routes = [
     {
      path: '/ghibli',
      name: 'ghibli-about',
+     redirect: {name: 'director'},
      component: () => import(/* webpackChunkName: "GhibliAbout" */ '../modules/ghibli/layouts/GhibliAbout.vue'),
      children: [
         //pongo path vacío en este primer children para que sea el primer children que aparezca por defecto
@@ -28,6 +29,7 @@ const routes = [
     {
      path: '/ghibli-films',
      name: 'ghibli-films',
+     redirect: {name: 'films'},
      component: () => import(/* webpackChunkName: "GhibliFilms" */ '../modules/ghibliFilms/layouts/GhibliFilms.vue'),
      children:[
       {
