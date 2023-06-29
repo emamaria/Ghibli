@@ -85,4 +85,11 @@ input:focus{
     border-radius: 10px;
    
 }
+
+@media screen and (max-width:600px){
+  input{
+     width: 270px;
+  }
+}
+
 </style>
