@@ -4,7 +4,7 @@ import {createRouter, createWebHashHistory} from 'vue-router'
 const routes = [
     {
       path: '/',
-      redirect: 'ghibli'  
+      redirect: 'ghibli-films'  
     },
     {
      path: '/ghibli',
