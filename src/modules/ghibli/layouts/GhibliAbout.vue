@@ -5,8 +5,8 @@
     <router-link class="link" :to="{name: 'director'}" v-slot="{isActive}">
     <a :class="isActive?'is-active':'not-active'">Director</a>
    </router-link>
-    <router-link  class="link" :to="{name: 'films'}" v-slot="{isActive}">
-    <a :class="isActive?'is-active':'not-active'">Films</a>
+    <router-link  class="link" :to="{name: 'awards'}" v-slot="{isActive}">
+    <a :class="isActive?'is-active':'not-active'">awards</a>
    </router-link>
   </nav>
  </div>
