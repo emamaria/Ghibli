@@ -26,7 +26,7 @@ export default {
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-    background-color: black;
+    background-color: white;
      margin-bottom: 100px;
 }
 

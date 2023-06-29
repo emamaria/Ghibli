@@ -1,30 +1,42 @@
 <template>
 <div class="main_container">
-      <h1>all films</h1>
-
+   
        <input type="text" v-model="searchFilm" placeholder="search the film">
        <p v-for="film in computedFilms" :key="film">
-        {{film}}
+        {{film.title}}
        </p>
 </div>
 
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
     data(){
         return {
             searchFilm: "",
-            films: ["Laputa", "totoro", "nausica", "kurenai"]
+            films: []
         }
     },
+
+    async created(){
+     let url =  "https://ghibliapi.vercel.app/films"
+
+    this.films = await axios.get(url).then(films =>{
+         let filmsData = films.data
+        
+         return filmsData
+       } ).catch( err => console.log(err))
   
+     console.log(this.films)
+  },
    computed: {
     computedFilms(){
         if(this.searchFilm.trim().length === 0){
             return this.films
         }
-       return this.films.filter(film => film.toLowerCase().includes(this.searchFilm.toLowerCase()))
+       return this.films.filter(film => film.title.toLowerCase().includes(this.searchFilm.toLowerCase()))
         
     }
    }
@@ -36,13 +48,25 @@ p{
     color: white;
 }
 input{
-    background-color: yellow;
-    padding: 2rem;
-    width: 100%;
+    margin-top: 5rem;
+    background-color: #109ceb;
+    padding: 1rem;
+    width: 400px;
+    border: none;
+
+}
+
+
+input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: black;
 }
 .main_container{
 
-    background-color: blue;
+    background-color:lightblue;
      /* width: 80%;
     height: 80vh; */
     border-radius: 10px;
