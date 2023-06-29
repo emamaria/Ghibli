@@ -2,11 +2,11 @@
 <div class="main_container">
 <div class="title_nav_container">
   <nav>
-    <router-link class="link" :to="{name: 'director'}" v-slot="{isActive}">
-    <a :class="isActive?'is-active':'not-active'">Director</a>
+    <router-link class="link" :to="{name: 'director'}" v-slot="{isExactActive}">
+    <a :class="isExactActive?'is-active':'not-active'">Director</a>
    </router-link>
-    <router-link  class="link" :to="{name: 'awards'}" v-slot="{isActive}">
-    <a :class="isActive?'is-active':'not-active'">awards</a>
+    <router-link  class="link" :to="{name: 'awards'}" v-slot="{isExactActive}">
+    <a :class="isExactActive?'is-active':'not-active'">awards</a>
    </router-link>
   </nav>
  </div>
@@ -39,7 +39,7 @@ nav{
    }
 
 .link{
-    background-color: #109ceb;
+    background-color: #118a7e;
     padding: 10px;
     margin: 3px;
     text-decoration: none;
