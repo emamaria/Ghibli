@@ -7,7 +7,7 @@
     <a :class="isExactActive?'is-active':'not-active'">About</a>
    </router-link>
     <router-link  class="link" :to="{name: 'awards'}" v-slot="{isExactActive}">
-    <a :class="isExactActive?'is-active':'not-active'">awards</a>
+    <a :class="isExactActive?'is-active':'not-active'">Awards</a>
    </router-link>
   </nav>
  </div>
@@ -26,7 +26,7 @@ export default {
 
 h2{
     margin: 30px 0 0 30px;
-   color: #004445;
+   color: white;
    font-size: 2rem;
 }
 
@@ -48,16 +48,18 @@ nav{
    }
 
 .link{
-    background-color: #2c786c;
+    background-color: white;
+    color: #2c786c;
     padding: 10px;
     margin: 3px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 
 
 .main_container{
-    
+    border: 5px solid white;
     width: 90%;
     min-height: 100vh;
     display: flex;
@@ -69,10 +71,10 @@ nav{
 }
 
 .is-active{
-  color:  yellow;
+  color: brown;
 }
 
 .not-active{
-  color: white;
+  color: #2c786c;
 }
 </style>

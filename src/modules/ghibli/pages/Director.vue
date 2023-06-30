@@ -1,6 +1,6 @@
 <template>
 <div class="main_container">
-     <h2>director</h2>
+     <h2>Miyazaki Hayao</h2>
 </div>
  
 </template>
@@ -12,9 +12,14 @@ export default {
 </script>
 
 <style scoped>
+
+h2{
+    margin-top: 60px;
+    color: #2c786c; 
+}
   .main_container{
     background-image: none;
-    background-color: #118a7e ;
+    background-color: white;
     width: 85%;
    
   }

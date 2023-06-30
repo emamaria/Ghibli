@@ -1,6 +1,6 @@
 <template>
 <div class="main_container">
-      <h1>awards</h1>
+      <h2>Awards</h2>
 </div>
 
 </template>
@@ -12,8 +12,13 @@ export default {
 </script>
 
 <style scoped>
+
+h2{
+    margin-top: 60px;
+    color: #2c786c; 
+}
 .main_container{
-    background-color: #fcffc1;
+    background-color: white;
     background-image: none;
     width:85%;
    
