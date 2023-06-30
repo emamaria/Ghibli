@@ -2,13 +2,22 @@
 <div class="main_container">
      <div class="film_img_info">
        <div class="title_img">
-        <main>
-
+        <header class="titles">
+            <h4>{{filmData.title}}</h4>
+            <h4>{{filmData.original_title}} &nbsp;({{filmData.original_title_romanised}})</h4>
+            <p>{{filmData.release_date}}</p>
+        </header>
+        <main class="banner">
+          <img :src="filmData.movie_banner" :alt="filmData.title">
         </main>
-        <h4></h4>
+    
        </div>
        <div class="film_info">
-
+         <p>{{filmData.description}}</p>
+         <p>Director: {{filmData.director}}</p>
+         <p>Producer: {{filmData.producer}}</p>
+         <p>RT Score: {{filmData.rt_score}}</p>
+         <p>{{filmData.running_time}}min</p>
        </div>
 
      </div>
@@ -50,13 +59,54 @@ export default {
 
 <style scoped>
 
+.film_info{
+    border-top: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 70vh;
+    color: #2a2438; 
+}
+
+.film_info p{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.titles{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.title_img{
+   display: flex;
+   flex-direction: row;
+}
+
+img{
+    width: 100%;
+   
+}
+.banner{
+    width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 .film_img_info{
     background-color:#109ceb;
 }
 
 .main_container{
-    background-color: yellow;
-     width: 90%;
+    background-color: #109ceb;
+     width: 80%;
     height: 40vh;
     background-image: none;
 }
