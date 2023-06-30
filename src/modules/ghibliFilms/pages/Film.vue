@@ -4,7 +4,7 @@
        <div class="title_img">
         <header class="titles">
             <h4>{{filmData.title}}</h4>
-            <h4>{{filmData.original_title}} &nbsp;({{filmData.original_title_romanised}})</h4>
+            <h4>{{filmData.original_title}}({{filmData.original_title_romanised}})</h4>
             <p>{{filmData.release_date}}</p>
         </header>
         <main class="banner">
@@ -105,9 +105,50 @@ img{
 }
 
 .main_container{
-    background-color: #109ceb;
-     width: 80%;
-    height: 40vh;
+   
+     width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
     background-image: none;
+    
+}
+
+@media screen and (max-width:1500px){
+  .titles{
+     font-size: 1.5rem;
+  }
+
+  .film_info p{
+    font-size: 1.2rem;
+   
+}
+}
+
+@media screen and (max-width:900px){
+  .titles{
+     font-size: 1rem;
+  }
+
+  .film_info p{
+    font-size: 1rem;
+   
+}
+}
+
+@media screen and (max-width:600px){
+  .title_img{
+    flex-direction: column;
+  }
+  
+  .titles{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .banner{
+    width: 100%;
+  }
 }
 </style>
