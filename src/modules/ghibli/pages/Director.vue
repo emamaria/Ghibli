@@ -14,7 +14,8 @@ export default {
 <style scoped>
   .main_container{
     background-image: none;
-    background-color: #118a7e;
-    border-radius: 10px;
+    background-color: #118a7e ;
+    width: 85%;
+   
   }
 </style>

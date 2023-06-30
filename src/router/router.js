@@ -38,9 +38,13 @@ const routes = [
         component: () => import( /* webpackChunkName: "Films" */ '../modules/ghibliFilms/pages/Films.vue')
        },
        {
-        path: 'film',
+        path: ':id',
         name: 'film',
-        component: () => import( /* webpackChunkName: "Film" */ '../modules/ghibliFilms/pages/Film.vue')
+        component: () => import( /* webpackChunkName: "Film" */ '../modules/ghibliFilms/pages/Film.vue'),
+        props:(route)=> {
+          const {id} = route.params
+          return {id}
+        }
        }
      ]
     },

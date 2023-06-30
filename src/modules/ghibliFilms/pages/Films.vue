@@ -3,7 +3,7 @@
    
        <input type="text" v-model="searchFilm" placeholder="search the film"> 
        <div class="film_container">
-       <Film v-for="film in computedFilms" :key="film.id" :title="film.title" :img="film.image"/>
+       <Film v-for="film in computedFilms"  @click="goToFilm(film.id)" :key="film.id" :title="film.title" :img="film.image"/>
        </div>
 </div>
 
@@ -35,6 +35,12 @@ export default {
   
      console.log(this.films)
   },
+  methods: {
+     goToFilm(id){
+        this.$router.push(`/ghibli-films/${id}`)
+     }
+  },
+
    computed: {
     computedFilms(){
         if(this.searchFilm.trim().length === 0){
@@ -80,7 +86,7 @@ input:focus{
 .main_container{
      display: flex;
      flex-direction: column;
-    background-color:lightblue;
+    /* background-color:lightblue; */
     height: 100%;
     border-radius: 10px;
    

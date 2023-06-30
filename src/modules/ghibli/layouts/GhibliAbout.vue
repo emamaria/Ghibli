@@ -69,7 +69,7 @@ nav{
 }
 
 .is-active{
-  color:  brown;
+  color:  yellow;
 }
 
 .not-active{
