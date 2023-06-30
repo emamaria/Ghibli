@@ -1,6 +1,7 @@
 <template>
-<div class="main_container">
-     <div class="film_img_info">
+ <p class="loading" v-if="!filmData.id">Loading</p>
+<div v-else class="main_container">
+   <div  class="film_img_info">
        <div class="title_img">
         <header class="titles">
             <h4>{{filmData.title}}</h4>
@@ -58,6 +59,13 @@ export default {
 </script>
 
 <style scoped>
+
+.loading{
+    margin-top: 200px;
+    color:#109ceb;
+    font-size: 2rem;
+   
+}
 
 .film_info{
     border-top: 5px solid white;

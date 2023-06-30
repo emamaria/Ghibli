@@ -1,7 +1,7 @@
 <template>
-<div class="main_container">
-   
-       <input type="text" v-model="searchFilm" placeholder="search the film"> 
+<p class="loading" v-if="films.length === 0">Loading</p>
+<div v-else class="main_container">
+      <input type="text" v-model="searchFilm" placeholder="search the film"> 
        <div class="film_container">
        <Film v-for="film in computedFilms"  @click="goToFilm(film.id)" :key="film.id" :title="film.title" :img="film.image"/>
        </div>
@@ -54,6 +54,13 @@ export default {
 </script>
 
 <style scoped>
+
+.loading{
+    margin-top: 200px;
+    color:#109ceb;
+    font-size: 2rem;
+   
+}
 
 .film_container{
     display: flex;
