@@ -24,11 +24,29 @@
  <router-view></router-view>
  </div>
  <footer>
-  <p>derechos reservados</p>
+  <div class="copy">
+     <p>&#169; 2023 all rights reserved</p>
+    <p>Only for dev practicing purpose</p>
+  </div>
  </footer>
 </template>
 
 <style scoped>
+
+.copy{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy p{
+  margin: 10px;
+  font-weight: bold;
+}
+
+
 
 .line{
   color: white;
@@ -93,6 +111,8 @@ footer{
   margin-top: auto;
   background-color: white;
   height: 80px;
+  display: flex;
+  justify-content: center;
 }
 
 footer p{
