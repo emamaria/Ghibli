@@ -46,7 +46,7 @@ export default {
         if(this.searchFilm.trim().length === 0){
             return this.films
         }
-       return this.films.filter(film => film.title.toLowerCase().includes(this.searchFilm.toLowerCase()))
+       return this.films.filter(film => film.title.toLowerCase().includes(this.searchFilm.trim().toLowerCase()))
         
     }
    }
