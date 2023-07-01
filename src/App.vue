@@ -71,8 +71,8 @@ nav{
    
 }
 
-.link a{
- color: #109ceb;
+ .link a{
+ color: green;
  font-weight: bold;
 }
 
@@ -120,11 +120,11 @@ footer p{
  color:#109ceb;
 }
 
-.is-active{
+.link .is-active{
   color:  brown;
 }
 
-.not-active{
-  color: white;
+.link .not-active{
+  color: #109ceb;
 }
 </style>

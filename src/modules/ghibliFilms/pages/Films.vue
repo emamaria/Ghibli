@@ -3,7 +3,7 @@
 <div v-else class="main_container">
       <input type="text" v-model="searchFilm" placeholder="search the film"> 
        <div class="film_container">
-       <Film v-for="film in computedFilms"  @click="goToFilm(film.id)" :key="film.id" :title="film.title" :img="film.image"/>
+       <Film  class="film" v-for="film in computedFilms"  @click="goToFilm(film.id)" :key="film.id" :title="film.title" :img="film.image"/>
        </div>
 </div>
 
@@ -54,6 +54,10 @@ export default {
 </script>
 
 <style scoped>
+
+.film:hover{
+    opacity: 0.7;
+}
 
 .loading{
     margin-top: 200px;
