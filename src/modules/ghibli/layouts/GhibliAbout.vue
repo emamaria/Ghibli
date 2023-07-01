@@ -27,7 +27,7 @@ export default {
 h2{
     margin: 30px 0 0 30px;
    color: white;
-   font-size: 2rem;
+   font-size: 2.2rem;
 }
 
 .title_nav_container{

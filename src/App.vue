@@ -96,6 +96,7 @@ nav{
 h1{
   color: white;
   margin: 0;
+  font-size: 2.3rem;
   font-family: 'Roboto', sans-serif;
 }
 
