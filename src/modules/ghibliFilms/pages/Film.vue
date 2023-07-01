@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style scoped>
+h4{
+  margin-bottom: 10px;
+}
 
 .loading{
     margin-top: 200px;
@@ -90,6 +93,7 @@ export default {
     align-items: center;
     color: white;
     font-size: 2rem;
+    padding: 20px;
 }
 
 .title_img{
@@ -152,7 +156,7 @@ img{
   
   .titles{
     width: 100%;
-    padding: 20px;
+    
   }
 
   .banner{

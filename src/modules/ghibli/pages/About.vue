@@ -54,7 +54,7 @@ h3{
     margin-top: 60px;
     color: #2c786c; 
     margin-bottom: 40px;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
   .main_container{
     background-image: none;
