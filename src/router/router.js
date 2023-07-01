@@ -9,14 +9,14 @@ const routes = [
     {
      path: '/ghibli',
      name: 'ghibli-about',
-     redirect: {name: 'director'},
+     redirect: {name: 'about'},
      component: () => import(/* webpackChunkName: "GhibliAbout" */ '../modules/ghibli/layouts/GhibliAbout.vue'),
      children: [
         //pongo path vacío en este primer children para que sea el primer children que aparezca por defecto
         {
          path: '',
-         name: 'director',
-         component: () => import( /* webpackChunkName: "Director" */ '../modules/ghibli/pages/Director.vue')
+         name: 'about',
+         component: () => import( /* webpackChunkName: "Director" */ '../modules/ghibli/pages/About.vue')
         },
         {
          path: 'awards',

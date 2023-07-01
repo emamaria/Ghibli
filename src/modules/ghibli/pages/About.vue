@@ -1,6 +1,6 @@
 <template>
 <div class="main_container">
-     <h2>Miyazaki Hayao</h2>
+     <h2>About</h2>
 </div>
  
 </template>

@@ -16,7 +16,7 @@
     <a :class="isActive?'is-active':'not-active'">Films</a>
    </router-link>
     <router-link  class="link" :to="{name: 'ghibli-about'}" v-slot="{isActive}">
-    <a :class="isActive?'is-active':'not-active'">Director</a>
+    <a :class="isActive?'is-active':'not-active'">Ghibli</a>
    </router-link>
   </nav>
 </div>

@@ -1,9 +1,9 @@
 <template>
 <div class="main_container">
 <div class="title_nav_container">
-    <h2>Director</h2>
+    <h2>Ghibli</h2>
   <nav>
-    <router-link class="link" :to="{name: 'director'}" v-slot="{isExactActive}">
+    <router-link class="link" :to="{name: 'about'}" v-slot="{isExactActive}">
     <a :class="isExactActive?'is-active':'not-active'">About</a>
    </router-link>
     <router-link  class="link" :to="{name: 'awards'}" v-slot="{isExactActive}">
