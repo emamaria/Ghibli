@@ -83,12 +83,10 @@ nav{
  @media screen and (max-width:600px){
  
   .link{
-    padding: 5px;
+    padding: 3px;
   }
 
-  .link a{
-    font-size: 5px;
-  }
+  
 
   h2{
     
