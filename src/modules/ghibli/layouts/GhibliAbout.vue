@@ -68,6 +68,7 @@ nav{
     margin-top: 10px;
     background-image: url("../../../assets/nature.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 100px;
 }
 
