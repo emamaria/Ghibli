@@ -105,7 +105,7 @@ input:focus{
 
 @media screen and (max-width:600px){
   input{
-     width: 250px;
+     width: 230px;
   }
 
   
