@@ -68,5 +68,9 @@ h3{
   .about_container{
     font-size: 1.5rem;
   }
+
+  h3{
+    font-size: 1.8rem;
+  }
 }
 </style>

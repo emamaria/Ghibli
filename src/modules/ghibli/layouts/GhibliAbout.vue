@@ -79,4 +79,17 @@ nav{
 .not-active{
   color: #2c786c;
 }
+
+ @media screen and (max-width:600px){
+ 
+  .link{
+    padding: 5px;
+  }
+
+  h2{
+    
+   color: white;
+   font-size: 1.8rem;
+}
+}
 </style>

@@ -91,7 +91,7 @@ nav{
   justify-content: center;
   align-items: center;
   padding: 30px;
-  min-width: 300px;
+  min-width: 270px;
 }
 h1{
   color: white;
@@ -126,5 +126,14 @@ footer p{
 
 .link .not-active{
   color: #109ceb;
+}
+
+@media screen and (max-width:600px){
+ h1{
+  font-size: 1.8rem;
+ 
+}
+
+
 }
 </style>
