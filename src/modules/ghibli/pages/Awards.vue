@@ -44,8 +44,12 @@ span{
   margin-bottom: 40px;
 }
 
-h4, p{
-     margin-bottom: 20px;
+ p{
+     margin-bottom: 25px;
+}
+
+h4{
+  margin-bottom: 30px;
 }
 
 h3{
