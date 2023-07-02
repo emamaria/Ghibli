@@ -2,7 +2,7 @@
 <p class="loading" v-if="films.length === 0">Loading</p>
 <div v-else class="main_container">
       <input type="text" v-model="searchFilm" placeholder="search the film"> 
-       <div class="film_container">
+       <div v-if="films.length > 1" class="film_container">
        <Film  class="film" v-for="film in computedFilms"  @click="goToFilm(film.id)" :key="film.id" :title="film.title" :img="film.image"/>
        </div>
 </div>

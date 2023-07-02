@@ -67,11 +67,12 @@ nav{
     align-items: center;
     margin-top: 10px;
     background-image: url("../../../assets/nature.jpg");
+    background-repeat: no-repeat;
     margin-bottom: 100px;
 }
 
 .is-active{
-  color: brown;
+  color: #0c005a;
 }
 
 .not-active{

@@ -121,7 +121,7 @@ footer p{
 }
 
 .link .is-active{
-  color:  brown;
+  color: #0c005a;
 }
 
 .link .not-active{
