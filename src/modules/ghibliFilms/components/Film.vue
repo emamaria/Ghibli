@@ -4,7 +4,7 @@
     <h3>{{title}}</h3>
   </header>
   <main>
-    <img :src="img" :alt="title">
+    <img v-if="img" :src="img" :alt="title">
   </main>
 </div>
 </template>

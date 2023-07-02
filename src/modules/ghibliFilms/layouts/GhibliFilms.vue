@@ -2,6 +2,7 @@
 <div class="main_container">
 <div class="title_container">
  <h2>Films</h2>
+ 
  </div>
  <router-view></router-view>
 </div>

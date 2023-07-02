@@ -9,7 +9,7 @@
             <p>{{filmData.release_date}}</p>
         </header>
         <main class="banner">
-          <img :src="filmData.movie_banner" :alt="filmData.title">
+          <img v-if="filmData.movie_banner" :src="filmData.movie_banner" :alt="filmData.title">
         </main>
     
        </div>
@@ -20,8 +20,9 @@
          <p>RT Score: {{filmData.rt_score}}</p>
          <p>{{filmData.running_time}}min</p>
        </div>
-
+      
      </div>
+      <div class="back_link"><router-link :to="{name: 'ghibli-films' }">Back</router-link></div> 
 </div>
  
 </template>
@@ -125,6 +126,22 @@ img{
     align-items: center ;
     background-image: none;
     
+}
+
+.back_link{
+  background-color: #109ceb;
+  text-align: center;
+ 
+  margin-top: 20px;
+  padding: 10px;
+  
+}
+
+.back_link a{
+  text-decoration: none;
+   width: 100px;
+  height: 20px; 
+  color:white;
 }
 
 @media screen and (max-width:1500px){
