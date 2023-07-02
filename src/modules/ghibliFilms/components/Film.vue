@@ -43,4 +43,15 @@ img{
 header{
   padding: 10px;
 }
+
+@media screen and (max-width:600px){
+  input{
+     width: 250px;
+  }
+
+  .film_container{
+    width: 250px;
+  }
+  
+}
 </style>

@@ -108,9 +108,7 @@ input:focus{
      width: 250px;
   }
 
-  .film{
-    width: 260px;
-  }
+  
 }
 
 </style>
