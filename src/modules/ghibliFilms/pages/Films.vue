@@ -105,7 +105,11 @@ input:focus{
 
 @media screen and (max-width:600px){
   input{
-     width: 270px;
+     width: 250px;
+  }
+
+  .film{
+    width: 260px;
   }
 }
 

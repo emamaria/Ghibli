@@ -77,7 +77,7 @@ h4{
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 70vh;
+    height: 100vh;
     color: #2a2438; 
 }
 

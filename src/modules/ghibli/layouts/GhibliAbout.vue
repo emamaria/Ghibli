@@ -86,10 +86,14 @@ nav{
     padding: 5px;
   }
 
+  .link a{
+    font-size: 5px;
+  }
+
   h2{
     
    color: white;
-   font-size: 1.8rem;
+   font-size: 1.5rem;
 }
 }
 </style>

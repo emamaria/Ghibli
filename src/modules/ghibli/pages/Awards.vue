@@ -68,11 +68,11 @@ h3{
  @media screen and (max-width:600px){
  
   .awards_container{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   h3{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 </style>
