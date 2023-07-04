@@ -5,7 +5,7 @@
         <p class="start_text"><span>Outstanding awards:</span></p>
          <h4>Spirited Away(2001):</h4>
             <p>Academy Award for Best Animated Feature(2003)</p>
-            <p>Golden Bear(2002):</p>
+            <p>Golden Bear(2002)</p>
           <h4>Ponyo(2008):</h4>
             <p>Japan Academy Film Prize(2009)</p>
           <h4>Howl's Moving Castle(2004):</h4>

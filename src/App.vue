@@ -68,12 +68,16 @@ nav{
     margin: 3px;
     text-decoration: none;  
     background-color: white;
-   
+    border-radius: 4px;
 }
 
  .link a{
  color: green;
  font-weight: bold;
+}
+
+.link:hover{
+  opacity: 0.8;
 }
 
 .titles_container{

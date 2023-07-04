@@ -57,6 +57,7 @@ export default {
 
 .film:hover{
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .loading{

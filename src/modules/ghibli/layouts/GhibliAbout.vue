@@ -54,6 +54,11 @@ nav{
     margin: 3px;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 4px;
+}
+
+.link:hover{
+  opacity: 0.8;
 }
 
 

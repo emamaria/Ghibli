@@ -78,7 +78,7 @@ h4{
     justify-content: space-around;
     flex-wrap: wrap;
     height: 100vh;
-    color: #2a2438; 
+    color: white; 
 }
 
 .film_info p{
@@ -134,7 +134,7 @@ img{
  
   margin-top: 20px;
   padding: 10px;
-  
+  border-radius: 4px;
 }
 
 .back_link a{
