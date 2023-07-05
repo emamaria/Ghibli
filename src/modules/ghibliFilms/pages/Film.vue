@@ -119,7 +119,7 @@ img{
 
 .main_container{
    
-     width: 85%;
+     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
