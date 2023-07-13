@@ -25,7 +25,7 @@ export default {
     },
 
     async created(){
-     let url =  "https://ghibliapi.vercel.app/films"
+     let url =  "https://ghibli.rest/films"
 
     this.films = await axios.get(url).then(films =>{
          let filmsData = films.data
